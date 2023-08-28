@@ -37,3 +37,5 @@ INSERT INTO cats VALUES();
 
 /* ----- Inhalte der Tabelle anzeigen ----- */
 SELECT * FROM cats;
+
+# Hallo
