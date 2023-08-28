@@ -1,3 +1,5 @@
+/* ----- Strukturen ----- */
+
 /*
     Doppelte DS werden NICHT mehr zugelassen
     UNIQUE
