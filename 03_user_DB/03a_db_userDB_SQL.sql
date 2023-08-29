@@ -15,11 +15,14 @@ CREATE TABLE IF NOT EXISTS boo.users
 DESCRIBE boo.users;
 
 /* Daten */
-INSERT INTO boo.users(userName, firstName, familyName)
+INSERT INTO
+boo.users(userName, firstName, familyName)
 VALUES ("max", "Max", "Mütze");
-INSERT INTO boo.users(userName, firstName, familyName)
+INSERT INTO
+boo.users(userName, firstName, familyName)
 VALUES ("maxine", "Maxine", "Mützerich");
-INSERT INTO boo.users(userName, firstName, familyName)
+INSERT INTO
+boo.users(userName, firstName, familyName)
 VALUES ("maxl", "Max", "Mützerich");
 
 
