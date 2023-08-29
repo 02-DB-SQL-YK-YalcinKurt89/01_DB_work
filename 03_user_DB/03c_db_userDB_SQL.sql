@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS boo.users
 DESCRIBE boo.users;
 
 /* Daten */
--- Besser: PWDs verschlüsseln!
+-- Besser: PWDs verschl端sseln!
 INSERT INTO boo.users(userName, firstName, familyName, userPwd) 
 VALUES ("max", "Max", "Mütze", SHA1("1234"));
 INSERT INTO boo.users(userName, firstName, familyName, userPwd) 
