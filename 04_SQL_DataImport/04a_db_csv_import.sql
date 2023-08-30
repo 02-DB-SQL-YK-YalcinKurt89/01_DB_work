@@ -16,10 +16,10 @@ DESCRIBE boo.cats;
 
 -- CSV-Datei parsen
 LOAD DATA LOCAL INFILE "04_SQL_DataImport/data/cats_export.csv"
-INTO TABLE boo.cats
-FIELDS TERMINATED BY ";" 
-LINES TERMINATED BY "\n" 
-IGNORE 1 ROWS
+INTO TABLE boo.cats          -- "INTO TABLE" gibt an, in welche Tabelle die Daten importiert werden sollen (hier: Tabelle "cats").
+FIELDS TERMINATED BY ";"     -- "FIELDS TERMINATED BY" legt das Trennzeichen fest, das die Felder in der CSV-Datei trennt (hier: Semikolon ';').
+LINES TERMINATED BY "\n"     -- "LINES TERMINATED BY" gibt das Zeilentrennzeichen in der CSV-Datei an (hier: Zeilenumbruch '\n').
+IGNORE 1 ROWS -- "IGNORE 1 ROWS" gibt an, dass die erste Zeile der CSV-Datei übersprungen werden soll (oft Überschriften).
 ;
 
 SELECT * FROM boo.cats;
