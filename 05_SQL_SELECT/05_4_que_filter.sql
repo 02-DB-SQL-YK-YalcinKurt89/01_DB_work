@@ -45,7 +45,7 @@ LIMIT 20
 
 -- Eingrenzen/Filtern WHERE & LIKE + Parameter
 -- Unscharfe Suche 
-/* */
+/* 
 SELECT
 	ticker AS "SYM",
     c_name AS Unternehmen,
@@ -78,7 +78,7 @@ WHERE industry LIKE "_ood%"
 ORDER BY industry ASC
 LIMIT 40
 ;
-
+*/
 
 --  Eingrenzen/Filtern WHERE & IN / NOT IN (Suchsets)
 /*
@@ -109,7 +109,7 @@ ORDER BY c_name;
 */
 
 -- Eingrenzen/Filtern WHERE & BETWEEN / NOT BETWEEN
-/*
+/**/
 SELECT 
     ticker AS "SYM",
     c_name AS "Unternehmen",
@@ -125,7 +125,7 @@ WHERE sector = "Financials" AND NOT (price BETWEEN 20.0 AND 250.0) -- Band rausf
 ORDER BY price DESC
 LIMIT 200 -- X Zeilen ab 0
 ;
-*/
+
 
 
 
